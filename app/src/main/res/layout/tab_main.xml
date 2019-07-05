@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/first_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/first_image"
+                        android:layout_width="64dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/first" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        app:lottie_autoPlay="true"
+                        app:lottie_scale="0.5"
+                        app:lottie_fileName="first.json"
+                        app:lottie_loop="false"
+                        />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="首页"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/finet_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_finet"
+                        android:layout_width="64dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/finet" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_finet"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        app:lottie_fileName="finet.json"
+                        app:lottie_scale="0.5"
+                        app:lottie_loop="false"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_finet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="财华号"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/stock_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_stock"
+                        android:layout_width="64dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/stock" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        app:lottie_fileName="stock.json"
+                        android:visibility="gone"
+                        app:lottie_scale="0.5"
+                        app:lottie_loop="false"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="股吧"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/brocast_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/image_brocast"
+                        android:layout_width="64dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/broadcast" />
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_brocast"
+                        android:layout_width="wrap_content"
+                        app:lottie_scale="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        app:lottie_fileName="brocast.json"
+                        android:visibility="gone"
+                        app:lottie_loop="false"
+                        />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_brocast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="财经播报"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/wo_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/image_wo"
+                        android:layout_width="64dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/wo" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_wo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        app:lottie_scale="0.5"
+                        app:lottie_fileName="wo.json"
+                        android:visibility="gone"
+                        app:lottie_loop="false"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_wo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="我的"
+                    android:textColor="#82858b" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
